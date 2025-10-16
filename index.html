@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Dolja</title>
+</head>
+
+<body>
+  <header class="header__wrapper" id="header">
+    <div class="container header__container">
+      <a class="header__logo_container" onclick="scrollToSection('header')">
+        <img class="header__logo" src="./assets/icons/logo.png" alt="header logo">
+      </a>
+      <div class="header__contact_container">
+        <div class="header__contact_email_container">
+          <img class="header__contact_email_img" src="./assets/icons/envelope.png" alt="envelope icon">
+          <p class="header__contact_email_text">projekce@suhssnsv.com</p>
+        </div>
+        <a class="header__contact_btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=projekce@suhssnsv.com" target="_blank">
+          <img src="./assets/icons/envelope.png" alt="envelope icon">
+          <p class="header__contact_btn_text">Kontaktujte nás</p>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main__wrapper">
+    <section class="hero__section">
+      <div class="hero__image_container">
+        <img class="hero__img" src="./assets/imgs/hero_img.png" alt="hero image">
+      </div>
+      <div class="container hero__section_info_wrapper">
+        <div class="hero__section_info">
+          <div class="hero__section_info_text">
+            <h1 class="hero__section_title">Komplexní řešení v oblasti elektroenergetiky</h1>
+            <p class="hero__section_desc">Inovativní energetické řešení s patentovanou technologií odolnou vůči
+              poškození.
+            </p>
+          </div>
+          <button class="hero__section_btn" onclick="scrollToSection('resilience')">Více</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service__section">
+      <div class="container service__section_content">
+        <div class="service__section_info">
+          <div class="service__info_text">
+            <h3 class="service__info_title">PROJEKČNÍ ČINNOST</h3>
+            <p class="service__info_desc">Projektujeme distribuční zařízení všech napěťových úrovní pro průmysl a
+              energetiku</p>
+          </div>
+          <div class="service__info_options_text">
+            <p class="service__info_option_text">Instalace, rekonstrukce a doplnění distribučních soustav</p>
+            <p class="service__info_option_text">Nastavení a selektivita ochran</p>
+            <p class="service__info_option_text">Zkratové poměry, vliv připojovaných zařízení</p>
+            <p class="service__info_option_text">Vyvádění výkonů výroben do distribučních soustav</p>
+          </div>
+          <button class="service__info_btn" onclick="scrollToSection('design')">Více</button>
+        </div>
+        <div class="service__img_container">
+          <img class="service__img" src="./assets/imgs/projects_value.png" alt="service image">
+        </div>
+      </div>
+    </section>
+
+    <section class="installation__section">
+      <div class="container installation__section_content">
+        <div class="installation__section_info">
+          <div class="installation__info_text">
+            <h3 class="installation__info_title">MONTÁŽE, REVIZE, DIAGNOSTICKÉ A SERVISNÍ PRÁCE</h3>
+          </div>
+          <div class="installation__info_options_text">
+            <p class="installation__info_option_text">Zajišťujeme montážní práce distribučních zařízení všech napěťových
+              úrovní pro průmysl a energetiku</p>
+            <p class="installation__info_option_text">Provádíme revize vyhrazeného elektického zařízení bez omezení
+              napětí</p>
+            <p class="installation__info_option_text">Provádíme parametrizaci a nastavení ochran, napěťové zkoušky,
+              měření</p>
+          </div>
+          <button class="installation__info_btn" onclick="scrollToSection('assembly')">Více</button>
+        </div>
+        <div class="installation__img_container">
+          <img class="installation__img" src="./assets/imgs/img3.png" alt="installation image">
+        </div>
+      </div>
+    </section>
+
+    <section class="design__section" id="design">
+      <div class="container design__section_content">
+        <div class="design__section_info">
+          <div class="design__info_options_first">
+            <h3 class="design__info_options_title">Projekce venkovních a vnitřních rozvoden</h3>
+            <div class="design__info_options_container">
+              <p class="design__info_option_text">Rekonstrukce venkovních a vnitřních rozvoden</p>
+              <p class="design__info_option_text">Vybavení rezervních polí rozvoden 110 kV</p>
+              <p class="design__info_option_text">Instalace nových rozvaděčů VN</p>
+            </div>
+          </div>
+          <div class="design__info_options_second">
+            <h3 class="design__info_options_title">Projekce trafostanic</h3>
+            <div class="design__info_options_container">
+              <p class="design__info_option_text_special">Zákaznické trafostanice VVN/VN včetně zákaznických rozvoden
+                VVN a sítí VN
+              </p>
+              <p class="design__info_option_text">Trafostanice VN/NN</p>
+            </div>
+          </div>
+        </div>
+        <div class="design__img_container">
+          <img class="design__img" src="./assets/imgs/img4.png" alt="design image">
+        </div>
+      </div>
+      <div class="container power__section_content">
+        <div class="power__section_img_container">
+          <img class="power__section_img" src="./assets/imgs/img5.png" alt="power image">
+        </div>
+        <div class="power__section_text_info">
+          <h3 class="power__section_text_info_title">Studie optimalizace distribučních sítí a vlivy připojených
+            zařízení
+          </h3>
+          <div class="power__section_info_options">
+            <p class="design__info_option_text_special">Optimalizace nastavení a selektivity ochran na všech
+              napěťových
+              úrovních lokálních distribučních soustav (vč. dporučení pro provozování a rozšiřování) </p>
+            <p class="design__info_option_text">Zkratové poměry v sítích </p>
+            <p class="design__info_option_text">Výpočet kapacitních zemních proudů v sítích, řešení zemních ochran,
+              řešení kompenzace zemních proudů</p>
+            <p class="design__info_option_text">Návrh kompenzace účiníku vč. dekompenzace způsobené kapacitou kabeláže
+            </p>
+            <p class="design__info_option_text">Výpočty vlivů točivých strojů a na distribuční sítě</p>
+          </div>
+        </div>
+      </div>
+      <div class="separator"></div>
+    </section>
+
+    <section class="resilience__section" id="resilience">
+      <div class="container resilience__section_content">
+        <div class="resilience__section_info">
+          <h3 class="resilience__section_info_title">Elektrárna se zvýšenou odolností vůči vnějšímu poškození v bojové
+            zóně</h3>
+          <p class="resilience__section_info_desc">Jsme uživateli patentu "Elektrárna se zvýšenou odolností vůči
+            vnějšímu poškození v bojové zóně". Jedná se o projekt bateriového úložiště nad 20 MW, doplněného o FVE popř.
+            další výrobny el. energie. Celé zařízení je rozděleno do malých celků (řádově stovky kW), které jsou díky
+            ploše FVE dostatečně vzdáleny od sebe. V kombinaci s unikátní topologii distribuční sítě a systémem ochran,
+            je zajištěno, že v případě bombardování jsou vyřazeny z provozu pouze části bezprostředně mechanicky
+            zničené, přičemž ostaní části jsou schopny nepřetržitého provozu.</p>
+          <p class="resilience__section_info_desc">Výkon je vyveden na úroveň VVN čtyřmi transformátory umístěných v
+            opačných koncích celé plochy a to ve stoprocentní výkonové záloze při poškození dvou z nich. Instalace
+            těchto zařízení ve válečných oblastech dokáže výrazně přispět ke stabilizaci distribučních soustav, ničených
+            při teroristických útocích na infrastrukturu. Zároveň je možné využívat použité topologie sítě v kombinaci
+            se systémem chránění v distribučních sítích obecně (nejen pro vyvedení výkonu tohoto zdroje)</p>
+        </div>
+        <div class="resilience__section_img_container">
+          <img src="./assets/imgs/certificate.png" alt="certificate image">
+        </div>
+      </div>
+      <div class="assembly__section_wrapper" id="assembly">
+        <div class="container assembly__section_content">
+          <div class="assembly__section_info">
+            <h4 class="assembly__section_info_title">Montážní práce</h4>
+            <p class="assembly__section_info_desc">Zajišťujeme montážní práce při rekonstrukcích venkovních a vnitřních
+              rozvoden i při instalacích nových rozvaděčů VN.</p>
+            <p class="assembly__section_info_desc">Provádíme kompletaci a zapojení řídících skříní kobek či polí
+              rozvoden,
+              výrobu rozvaděčů ochran a ostatních pomocných technologií rozvoden. </p>
+            <p class="assembly__section_info_desc">Provádíme zhotovení kabelových souborů vč. následných napěťových
+              zkoušek, popřípadě oprav</p>
+            <div class="assembly__section_info_final">
+              <h4 class="assembly__section_info_title">Revize</h4>
+              <p class="assembly__section_info_desc">Provádíme revize vyhrazeného elektického zařízení bez omezení
+                napětí.
+                A to jak výchozí revize námi dodaného zařízení, tak můžeme nabídnout pravidelné revize.</p>
+            </div>
+          </div>
+          <div class="assembly__cards_container">
+            <div class="assembly__card_container">
+              <div class="assembly__card_number_container">
+                <p class="assembly__card_number">1</p>
+              </div>
+              <div class="assembly__card_text_content">
+                <h4 class="assembly__card_title">Parametrizace a
+                  nastavení ochran</h4>
+                <p class="assembly__card_desc">Provádíme parametrizaci a nastavení ochran podle našich projektů
+                  nastavení</p>
+              </div>
+            </div>
+            <div class="assembly__card_container">
+              <div class="assembly__card_number_container">
+                <p class="assembly__card_number">2</p>
+              </div>
+              <div class="assembly__card_text_content">
+                <h4 class="assembly__card_title">Napěťové zkoušky
+                  dle IEEE400.2</h4>
+                <p class="assembly__card_desc">Provádíme napěťové zkoušky
+                  přístrojem HVA 45TD</p>
+              </div>
+            </div>
+            <div class="assembly__card_container">
+              <div class="assembly__card_number_container">
+                <p class="assembly__card_number">3</p>
+              </div>
+              <div class="assembly__card_text_content">
+                <h4 class="assembly__card_title">Měření měrného zemního odporu
+                  a ostatních parametrů zemnění</h4>
+                <p class="assembly__card_desc">Provádíme měření zemního odporu pro optimální návrh uzemnění.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer__wrapper">
+    <div class="container footer__container">
+      <h3 class="footer__title">DOLJA ELEKTRO s.r.o.</h3>
+      <div class="footer__info_container">
+        <p class="footer__info_text">28. října 810/246, 709 00</p>
+        <p class="footer__info_separator"></p>
+        <p class="footer__info_text">709 00 Ostrava - Mariánské Hory</p>
+        <p class="footer__info_separator"></p>
+        <p class="footer__info_text">IČ: 233 15 547</p>
+        <p class="footer__info_separator"></p>
+        <p class="footer__info_text">projekce@suhssnsv.com</p>
+      </div>
+      <div class="footer__separator"></div>
+      <a class="footer__logo_container" onclick="scrollToSection('header')">
+        <img src="./assets/icons/logo_footer.png" alt="">
+      </a>
+    </div>
+  </footer>
+</body>
+
+<script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+</html>
