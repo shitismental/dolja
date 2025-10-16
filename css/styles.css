@@ -158,6 +158,14 @@
   max-width: 650px;
 }
 
+.service__section_info {
+  max-width: 500px;
+}
+
+.design__section_info {
+  max-width: 500px;
+}
+
 .service__info_title,
 .installation__info_title,
 .design__info_title {
@@ -220,6 +228,12 @@
 .installation__img_container,
 .design__img_container {
   max-width: 650px;
+  padding: 0;
+  object-fit: cover;
+}
+
+.installation__img_container {
+  max-width: 550px;
 }
 
 .installation__section {
