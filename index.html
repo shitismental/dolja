@@ -29,7 +29,7 @@
     </div>
   </header>
   <main class="main__wrapper">
-    <section class="hero__section">
+    <section class="hero__section reveal">
       <div class="hero__image_container">
         <img class="hero__img" src="./assets/imgs/hero_img.png" alt="hero image">
       </div>
@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section class="service__section">
+    <section class="service__section reveal">
       <div class="container service__section_content">
         <div class="service__section_info">
           <div class="service__info_text">
@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section class="installation__section">
+    <section class="installation__section reveal">
       <div class="container installation__section_content">
         <div class="installation__section_info">
           <div class="installation__info_text">
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section class="design__section" id="design">
+    <section class="design__section reveal" id="design">
       <div class="container design__section_content">
         <div class="design__section_info">
           <div class="design__info_options_first">
@@ -115,7 +115,7 @@
           <img class="design__img" src="./assets/imgs/img4.png" alt="design image">
         </div>
       </div>
-      <div class="container">
+      <div class="container reveal">
         <div class="power__section_content">
           <div class="power__section_img_container">
             <img class="power__section_img" src="./assets/imgs/img5.png" alt="power image">
@@ -141,7 +141,7 @@
       <div class="separator"></div>
     </section>
 
-    <section class="resilience__section" id="resilience">
+    <section class="resilience__section reveal" id="resilience">
       <div class="container resilience__section_content">
         <div class="resilience__section_info">
           <h3 class="resilience__section_info_title">Elektrárna se zvýšenou odolností vůči vnějšímu poškození v bojové
@@ -162,20 +162,21 @@
           <img src="./assets/imgs/certificate.png" alt="certificate image">
         </div>
       </div>
-      <div class="assembly__section_wrapper" id="assembly">
+      <div class="assembly__section_wrapper reveal" id="assembly">
         <div class="container assembly__section_content">
           <div class="assembly__section_info">
             <div class="assembly__section_info_first">
-<h4 class="assembly__section_info_title">Montážní práce</h4>
-            <p class="assembly__section_info_desc">Zajišťujeme montážní práce při rekonstrukcích venkovních a vnitřních
-              rozvoden i při instalacích nových rozvaděčů VN.</p>
-            <p class="assembly__section_info_desc">Provádíme kompletaci a zapojení řídících skříní kobek či polí
-              rozvoden,
-              výrobu rozvaděčů ochran a ostatních pomocných technologií rozvoden. </p>
-            <p class="assembly__section_info_desc">Provádíme zhotovení kabelových souborů vč. následných napěťových
-              zkoušek, popřípadě oprav</p>
+              <h4 class="assembly__section_info_title">Montážní práce</h4>
+              <p class="assembly__section_info_desc">Zajišťujeme montážní práce při rekonstrukcích venkovních a
+                vnitřních
+                rozvoden i při instalacích nových rozvaděčů VN.</p>
+              <p class="assembly__section_info_desc">Provádíme kompletaci a zapojení řídících skříní kobek či polí
+                rozvoden,
+                výrobu rozvaděčů ochran a ostatních pomocných technologií rozvoden. </p>
+              <p class="assembly__section_info_desc">Provádíme zhotovení kabelových souborů vč. následných napěťových
+                zkoušek, popřípadě oprav</p>
             </div>
-            
+
             <div class="assembly__section_info_final">
               <h4 class="assembly__section_info_title">Revize</h4>
               <p class="assembly__section_info_desc">Provádíme revize vyhrazeného elektického zařízení bez omezení
@@ -221,7 +222,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer__wrapper">
+  <footer class="footer__wrapper reveal">
     <div class="container footer__container">
       <h3 class="footer__title">DOLJA ELEKTRO s.r.o.</h3>
       <div class="footer__info_container">
@@ -248,6 +249,21 @@
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    reveals.forEach(el => observer.observe(el));
+  });
 </script>
 
 </html>
