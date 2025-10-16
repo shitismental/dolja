@@ -122,6 +122,11 @@
   border: 2px solid var(--clr-blue);
   border-radius: 60px;
   width: fit-content;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.hero__section_btn:hover {
+  background-color: var(--clr-blue);
 }
 
 .service__section,
@@ -201,6 +206,16 @@
   border-radius: 60px;
 }
 
+.service__info_btn {
+  border: 2px solid var(--clr-blue);
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.service__info_btn:hover {
+  background-color: transparent;
+  color: var(--clr-black);
+}
+
 .service__img_container,
 .installation__img_container,
 .design__img_container {
@@ -231,6 +246,13 @@
 .installation__info_btn {
   background-color: var(--clr-white);
   color: var(--clr-blue);
+  border: 2px solid var(--clr-white);
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.installation__info_btn:hover {
+  background-color: transparent;
+  color: var(--clr-white);
 }
 
 .design__info_options_title {
@@ -336,10 +358,15 @@
 }
 
 .assembly__section_info {
+  max-width: 667px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  max-width: 667px;
+  gap: 22px;
+}
+
+.assembly__section_info_first {
+  display: flex;
+  flex-direction: column;
 }
 
 .assembly__section_info_title {
@@ -351,6 +378,13 @@
 .assembly__section_info_desc {
   font-size: 18px;
   color: var(--clr-black);
+}
+
+.assembly__section_info_final {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  padding: 16px;
+  gap: 8px;
+  border-radius: 10px;
 }
 
 .assembly__cards_container {
@@ -442,7 +476,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 1535px) {}
+@media (max-width: 1535px) {
+  .assembly__section_info {
+    max-width: 467px;
+  }
+}
 
 @media (max-width: 1279px) {
   .header__contact_email_text {
@@ -514,7 +552,7 @@
   }
 
   .assembly__section_info {
-    max-width: 467px;
+    max-width: 367px;
   }
 
   .assembly__section_content {
@@ -582,6 +620,10 @@
   .resilience__section_info,
   .assembly__section_info {
     min-width: 100%;
+  }
+  
+  .container {
+    padding: 0 3rem;
   }
 
   .service__section,
@@ -653,11 +695,12 @@
   }
 
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .hero__section_info_text {
     max-width: 90%;
+    word-break: break-all;
   }
 
   .power__section_content {
@@ -678,6 +721,9 @@
     display: none;
   }
 
+  .header__wrapper {
+    padding: 15px 0;
+  }
 
 }
 
