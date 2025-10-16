@@ -29,7 +29,7 @@
     </div>
   </header>
   <main class="main__wrapper">
-    <section class="hero__section reveal">
+    <section class="hero__section">
       <div class="hero__image_container">
         <img loading="lazy" decoding="async" class="hero__img" src="./assets/imgs/hero_img.png" alt="hero image">
       </div>
@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section class="service__section reveal">
+    <section class="service__section">
       <div class="container service__section_content">
         <div class="service__section_info">
           <div class="service__info_text">
@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section class="installation__section reveal">
+    <section class="installation__section">
       <div class="container installation__section_content">
         <div class="installation__section_info">
           <div class="installation__info_text">
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section class="design__section reveal" id="design">
+    <section class="design__section" id="design">
       <div class="container design__section_content">
         <div class="design__section_info">
           <div class="design__info_options_first">
@@ -141,7 +141,7 @@
       <div class="separator"></div>
     </section>
 
-    <section class="resilience__section reveal" id="resilience">
+    <section class="resilience__section" id="resilience">
       <div class="container resilience__section_content">
         <div class="resilience__section_info">
           <h3 class="resilience__section_info_title">Elektrárna se zvýšenou odolností vůči vnějšímu poškození v bojové
@@ -222,7 +222,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer__wrapper reveal">
+  <footer class="footer__wrapper">
     <div class="container footer__container">
       <h3 class="footer__title">DOLJA ELEKTRO s.r.o.</h3>
       <div class="footer__info_container">
@@ -249,21 +249,6 @@
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const reveals = document.querySelectorAll(".reveal");
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
-
-    reveals.forEach(el => observer.observe(el));
-  });
 </script>
 
 </html>
