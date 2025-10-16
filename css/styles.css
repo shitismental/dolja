@@ -155,7 +155,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 550px;
+  max-width: 650px;
 }
 
 .service__info_title,
@@ -219,7 +219,7 @@
 .service__img_container,
 .installation__img_container,
 .design__img_container {
-  max-width: 550px;
+  max-width: 650px;
 }
 
 .installation__section {
@@ -328,7 +328,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 728px;
+  max-width: 928px;
 }
 
 .resilience__section_info_title {
