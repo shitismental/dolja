@@ -109,7 +109,7 @@
 }
 
 .hero__section_desc {
-  font-size: 20px;
+  font-size: 26px;
   color: var(--clr-white);
   font-weight: bold;
 }
@@ -169,13 +169,13 @@
 .service__info_title,
 .installation__info_title,
 .design__info_title {
-  font-size: 30px;
+  font-size: 32px;
   color: var(--clr-black);
   font-weight: bold;
 }
 
 .service__info_desc {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--clr-black);
   font-weight: bold;
 }
@@ -184,7 +184,7 @@
 .installation__info_option_text,
 .design__info_option_text,
 .design__info_option_text_special {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--clr-black);
   position: relative;
   padding-left: 1rem;
@@ -270,7 +270,7 @@
 }
 
 .design__info_options_title {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--clr-black);
   font-weight: bold;
 }
@@ -346,14 +346,14 @@
 }
 
 .resilience__section_info_title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   color: var(--clr-black);
   text-transform: uppercase;
 }
 
 .resilience__section_info_desc {
-  font-size: 18px;
+  font-size: 22px;
   color: var(--clr-black);
 }
 
@@ -381,21 +381,35 @@
 .assembly__section_info_first {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .assembly__section_info_title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: var(--clr-black);
 }
 
 .assembly__section_info_desc {
+  font-size: 22px;
+  color: var(--clr-black);
+}
+
+.assembly__card_title {
+  font-size: 20px;
+  color: var(--clr-black);
+  font-weight: bold;
+}
+
+.assembly__card_desc {
   font-size: 18px;
   color: var(--clr-black);
 }
 
 .assembly__section_info_final {
   box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   gap: 8px;
   border-radius: 10px;
@@ -432,7 +446,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 16px;
+  padding: 16px;
   max-width: 420px;
 }
 

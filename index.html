@@ -20,10 +20,10 @@
           <img loading="lazy" decoding="async" class="header__contact_email_img" src="./assets/icons/envelope.png" alt="envelope icon">
           <p class="header__contact_email_text">projekce@suhssnsv.com</p>
         </div>
-        <a class="header__contact_btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=projekce@suhssnsv.com">
+        <button class="header__contact_btn" onclick="scrollToSection('footer')">
           <img loading="lazy" decoding="async" src="./assets/icons/envelope.png" alt="envelope icon">
           <p class="header__contact_btn_text">Kontaktujte nás</p>
-        </a>
+        </button>
       </div>
     </div>
   </header>
@@ -234,7 +234,7 @@
         <p class="footer__info_text">projekce@suhssnsv.com</p>
       </div>
       <div class="footer__separator"></div>
-      <a class="footer__logo_container" onclick="scrollToSection('header')">
+      <a id="footer" class="footer__logo_container" onclick="scrollToSection('header')">
         <img loading="lazy" decoding="async" src="./assets/icons/logo_footer.png" alt="">
       </a>
     </div>
