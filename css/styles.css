@@ -621,16 +621,24 @@
   }
 
   .hero__section_desc {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .hero__section_btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 26px;
   }
 
   .hero__section_info {
     gap: 10px;
+  }
+
+  .assembly__card_title {
+    font-size: 20px;
+  }
+
+  .assembly__card_desc {
+    font-size: 18px;
   }
 
   .service__section_content,
