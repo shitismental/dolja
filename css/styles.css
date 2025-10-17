@@ -184,7 +184,7 @@
 .installation__info_option_text,
 .design__info_option_text,
 .design__info_option_text_special {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--clr-black);
   position: relative;
   padding-left: 1rem;
@@ -631,14 +631,6 @@
 
   .hero__section_info {
     gap: 10px;
-  }
-
-  .assembly__card_title {
-    font-size: 20px;
-  }
-
-  .assembly__card_desc {
-    font-size: 18px;
   }
 
   .service__section_content,
