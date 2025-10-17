@@ -2,7 +2,7 @@
   background-color: rgba(0, 127, 255, 0.4);
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding: 15px 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -747,10 +747,6 @@
 
   .header__contact_btn_text {
     display: none;
-  }
-
-  .header__wrapper {
-    padding: 15px 0;
   }
 
 }
