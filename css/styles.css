@@ -642,6 +642,10 @@
     align-items: flex-start;
     gap: 30px;
   }
+  
+  .assembly__section_info_desc {
+    font-size: 16px;
+  }
 
   .service__section_info,
   .installation__section_info,
@@ -665,6 +669,10 @@
 
   .design__section {
     padding-bottom: 0;
+  }
+
+  .assembly__card_desc {
+    font-size: 16px;
   }
 
   .service__img_container,
