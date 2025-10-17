@@ -106,6 +106,7 @@
   color: var(--clr-white);
   font-weight: bold;
   text-transform: uppercase;
+  word-break: normal;
 }
 
 .hero__section_desc {
@@ -747,6 +748,14 @@
 
   .header__contact_btn_text {
     display: none;
+  }
+
+  .hero__section_title {
+    font-size: 28px;
+  }
+
+  .hero__section_desc {
+    font-size: 16px;
   }
 
 }
